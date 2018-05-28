@@ -182,6 +182,17 @@ class DevelopmentEnv(Env):
 
     DEBUG = True
 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd7dqns5m0fs872',
+            'USER': 'sxtmxkernwdmdr',
+            'PASSWORD': '7d9ec1636115946d95ecc091e0917106232f8b1607d46cb9208f6b8fce7c0f62',
+            'HOST': 'ec2-23-23-142-5.compute-1.amazonaws.com',
+            'PORT': '5432',
+        },
+    }
+
     USE_SENTRY = True
 
 

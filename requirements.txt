@@ -15,7 +15,7 @@ pyjwt==1.6.4
 # python-memcached==1.59
 
 # Database adapters
-# psycopg2-binary==2.7.4
+psycopg2-binary==2.7.4
 # mysqlclient==1.3.12
 
 # Django channels framework: Project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more.
