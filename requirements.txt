@@ -35,3 +35,5 @@ requests==2.18.4
 
 # Sentry: Error tracking that helps developers monitor and fix crashes in real time.
 raven==6.8.0
+
+gunicorn==19.8.1

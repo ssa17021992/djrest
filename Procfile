@@ -1,1 +1,1 @@
-web: python manage.py runserver localhost:80 --noasgi
+web: gunicorn djrest.wsgi
