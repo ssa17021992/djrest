@@ -1,0 +1,683 @@
+{
+	"variables": [],
+	"info": {
+		"name": "djrest (localhost)",
+		"_postman_id": "f8c06a78-7b85-62b8-592c-c833754926cd",
+		"description": "Django REST framework api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "accounts",
+			"description": "",
+			"item": [
+				{
+					"name": "signup available",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/signup/available",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\"\n}"
+						},
+						"description": "Signup user available"
+					},
+					"response": []
+				},
+				{
+					"name": "signup mail",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/signup/mail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@mail.com\"\n}"
+						},
+						"description": "Send signup mail"
+					},
+					"response": []
+				},
+				{
+					"name": "signup check",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/signup/check",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@mail.com\",\n  \"code\": \"4683\"\n}"
+						},
+						"description": "Signup check code"
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"User\",\n  \"middleName\": \"User\",\n  \"lastName\": \"User\",\n\n  \"username\": \"user\",\n  \"password\": \"p455w0rd\",\n\n  \"email\": \"user@mail.com\",\n  \"birthday\": \"1993-05-21\",\n  \"phone\": \"55 4568 8273\",\n\n  \"code\": \"4683\"\n}"
+						},
+						"description": "Signup"
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/signin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\",\n  \"password\": \"p455w0rd\"\n}"
+						},
+						"description": "Signin"
+					},
+					"response": []
+				},
+				{
+					"name": "social signin",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/social/signin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"social\": \"facebook\",\n  \"token\": \"EAACEdEose0cBAJZAgcu9EcuSbywEXgq9Di3bBzOF3d57tAdYWSahipYrMRDVfjxxi4b82h7KSe729MRJZBFbhJxNZCe36HfzhipVrIcfndR4qyaAaw5vV4IfEulpt3yqwXuxCQa7RZBLoss8yZCFZCwZCH6wQeSZA8aZBRh7asY1BAZB5dtrajdaspSpfTIZCXnPUAZD\"\n}"
+						},
+						"description": "Signin"
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/profile",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Profile"
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8000/api/v1/users?fields=id,username,email&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,username,email",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "User list"
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/profile",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"User\",\n  \"lastName\": \"User\",\n  \"birthday\": \"1990-02-10\"\n}"
+						},
+						"description": "Profile"
+					},
+					"response": []
+				},
+				{
+					"name": "avatar",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/avatar",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "sublime-text.png",
+									"value": ""
+								}
+							]
+						},
+						"description": "Avatar update"
+					},
+					"response": []
+				},
+				{
+					"name": "passwd change",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/passwd/change",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"current\": \"p455w0rd\",\n  \"password\": \"12345678\"\n}"
+						},
+						"description": "Password change"
+					},
+					"response": []
+				},
+				{
+					"name": "passwd mail",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/passwd/mail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"user\"\n}"
+						},
+						"description": "Send password reset mail"
+					},
+					"response": []
+				},
+				{
+					"name": "passwd check",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/passwd/check",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJzdCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY4MTYxLCJleHAiOjE1MDc0Njg3NjF9.VrkcYrZfPvluWvFzZFrziaslDy4_ICI1IKFGOJgRQPk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Verify if token still is valid"
+					},
+					"response": []
+				},
+				{
+					"name": "passwd reset",
+					"request": {
+						"url": "http://localhost:8000/api/v1/accounts/me/passwd/reset",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJzdCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY4MTYxLCJleHAiOjE1MDc0Njg3NjF9.VrkcYrZfPvluWvFzZFrziaslDy4_ICI1IKFGOJgRQPk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"p455w0rd\"\n}"
+						},
+						"description": "Password reset"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "common",
+			"description": "",
+			"item": [
+				{
+					"name": "fruits",
+					"request": {
+						"url": {
+							"raw": "http://localhost:8000/api/v1/common/fruits?page=1&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"common",
+								"fruits"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"equals": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": "Fruits"
+					},
+					"response": []
+				},
+				{
+					"name": "static",
+					"request": {
+						"url": "http://localhost:8000/static/common/images/python.png",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Serve static files"
+					},
+					"response": []
+				},
+				{
+					"name": "localtime",
+					"request": {
+						"url": "http://localhost:8000/api/v1/common/localtime",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "Local time"
+					},
+					"response": []
+				},
+				{
+					"name": "fcm send",
+					"request": {
+						"url": "http://localhost:8000/api/v1/common/fcm/send",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Firebase Cloud Messaging\",\n  \"body\": \"...\",\n  \"to\": \"cD2uxeYEC9I:APA91bHzxh_oVGhnEemyLYXDpqVSr74xlLgcw4O4BGFsP3g7-IVNYeoJmRL8_hSPgo2H3iI2khQuUFaGi1SykqoeVm2OU4K9jXPDmiMdhCGVYZnZrTKU-xWmQkEse4BBI_2lCaCo_VtB\"\n}"
+						},
+						"description": "Send push notification"
+					},
+					"response": []
+				},
+				{
+					"name": "mail send",
+					"request": {
+						"url": "http://localhost:8000/api/v1/common/mail/send",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"subject\": \"Mail test\",\n  \"body\": \"...\",\n  \"to\": \"user@mail.com\"\n}\n"
+						},
+						"description": "Send mail"
+					},
+					"response": []
+				},
+				{
+					"name": "messages",
+					"request": {
+						"url": "http://localhost:8000/api/v1/common/rooms/1/msgs",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNdzVkU0dCdmZWQiIsInJuZCI6MTUwNzQ2NzkzNiwiaWF0IjoxNTA3NDY3OTcxLCJleHAiOjE4MjM2OTE5NzF9.S7YhOGPi_EMpwQoVbAySppFhnmBUVvjlLFuQ0786b-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Time-Zone",
+								"value": "America/Mexico_City"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"content\": \"Message...\"\n}"
+						},
+						"description": "Send message to room"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

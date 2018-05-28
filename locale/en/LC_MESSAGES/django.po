@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-03 23:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: accounts/authentication.py:28
+msgid "No credentials provided."
+msgstr ""
+
+#: accounts/authentication.py:31
+msgid "Token string should not contain spaces."
+msgstr ""
+
+#: accounts/authentication.py:37
+msgid "Token string should not contain invalid characters."
+msgstr ""
+
+#: accounts/authentication.py:46 accounts/authentication.py:49
+#: accounts/authentication.py:75 accounts/authentication.py:78
+msgid "Invalid token."
+msgstr ""
+
+#: accounts/authentication.py:54 accounts/authentication.py:83
+#: accounts/serializers.py:27 accounts/serializers.py:174
+#: accounts/serializers.py:309
+msgid "User does not exist."
+msgstr ""
+
+#: accounts/authentication.py:57 accounts/authentication.py:86
+#: accounts/serializers.py:178 accounts/serializers.py:222
+msgid "User inactive."
+msgstr ""
+
+#: accounts/authentication.py:60 accounts/authentication.py:89
+msgid "User password changed."
+msgstr ""
+
+#: accounts/models.py:21
+msgid "first name"
+msgstr ""
+
+#: accounts/models.py:23
+msgid "last name"
+msgstr ""
+
+#: accounts/models.py:28
+msgid "username"
+msgstr ""
+
+#: accounts/models.py:31
+msgid "password"
+msgstr ""
+
+#: accounts/models.py:34 accounts/models.py:85
+msgid "email address"
+msgstr ""
+
+#: accounts/models.py:36
+msgid "birthday"
+msgstr ""
+
+#: accounts/models.py:38
+msgid "phone number"
+msgstr ""
+
+#: accounts/models.py:43
+msgid "avatar"
+msgstr ""
+
+#: accounts/models.py:46
+msgid "renewed"
+msgstr ""
+
+#: accounts/models.py:49
+msgid "active"
+msgstr ""
+
+#: accounts/models.py:52 accounts/models.py:92 accounts/models.py:127
+msgid "created"
+msgstr ""
+
+#: accounts/models.py:54
+msgid "modified"
+msgstr ""
+
+#: accounts/models.py:76 accounts/models.py:124
+msgid "user"
+msgstr ""
+
+#: accounts/models.py:77
+msgid "users"
+msgstr ""
+
+#: accounts/models.py:87
+msgid "code"
+msgstr ""
+
+#: accounts/models.py:90
+msgid "expired"
+msgstr ""
+
+#: accounts/models.py:103
+msgid "sign up code"
+msgstr ""
+
+#: accounts/models.py:104
+msgid "sign up codes"
+msgstr ""
+
+#: accounts/models.py:112
+msgid "facebook"
+msgstr ""
+
+#: accounts/models.py:113
+msgid "twitter"
+msgstr ""
+
+#: accounts/models.py:117
+msgid "social"
+msgstr ""
+
+#: accounts/models.py:120
+msgid "token"
+msgstr ""
+
+#: accounts/models.py:134
+msgid "social token"
+msgstr ""
+
+#: accounts/models.py:135
+msgid "social tokens"
+msgstr ""
+
+#: accounts/serializers.py:41
+msgid "This email address has been used many times."
+msgstr ""
+
+#: accounts/serializers.py:77 accounts/serializers.py:82
+#: accounts/serializers.py:102 accounts/serializers.py:107
+msgid "Invalid code."
+msgstr ""
+
+#: accounts/serializers.py:135 accounts/serializers.py:209
+msgid "Social does not exist."
+msgstr ""
+
+#: accounts/serializers.py:142
+msgid "Token already in use."
+msgstr ""
+
+#: accounts/serializers.py:188 accounts/serializers.py:286
+msgid "Incorrect password."
+msgstr ""
+
+#: accounts/serializers.py:217
+msgid "There is no social token with this username."
+msgstr ""
+
+#: accounts/serializers.py:235
+msgid "Incorrect token."
+msgstr ""
+
+#: accounts/serializers.py:266
+msgid "The maximum file size is 1 MB."
+msgstr ""
+
+#: accounts/serializers.py:292
+msgid "Current and new password cannot be same."
+msgstr ""
+
+#: accounts/tasks.py:21 accounts/templates/accounts/sign_up_code_mail.html:8
+#: accounts/templates/accounts/sign_up_code_mail.html:11
+msgid "Sign up code"
+msgstr ""
+
+#: accounts/tasks.py:38 accounts/templates/accounts/passwd_reset_mail.html:8
+#: accounts/templates/accounts/passwd_reset_mail.html:11
+msgid "Password reset"
+msgstr ""
+
+#: accounts/templates/accounts/passwd_reset_mail.html:13
+msgid "User"
+msgstr ""
+
+#: accounts/templates/accounts/passwd_reset_mail.html:16
+msgid "URL"
+msgstr ""
+
+#: app/consumers.py:16 app/views.py:10
+msgid "Not found."
+msgstr ""
+
+#: app/envs.py:10
+msgid "Django administration"
+msgstr ""
+
+#: app/envs.py:11
+msgid "Django site admin"
+msgstr ""
+
+#: app/envs.py:12
+msgid "Site administration"
+msgstr ""
